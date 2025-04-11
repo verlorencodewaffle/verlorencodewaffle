@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 # Conexão com MongoDB Atlas
 try:
-    client = MongoClient("mongodb+srv://atlas-sample-dataset-load-67f9663a49df8e1a7ac8bed2:qff2zxpH9mmFjicL@cluster0.yvp3uw2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    client = MongoClient("mongodb+srv://datauti:RUM3OMMrktpN58L3@cluster0.ogzdf2m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     db = client["meu_banco"]  # nome do banco que você quiser
     colecao_usuarios = db["usuarios"]  # nome da coleção
 except ConnectionFailure as e:
